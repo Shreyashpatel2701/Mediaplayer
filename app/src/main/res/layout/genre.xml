@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineSpotShadowColor="@color/teal_700"
+    android:background=" #d3d3d3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_language"
+        app:layout_constraintVertical_bias="0.143"
+        android:outlineAmbientShadowColor="@color/teal_700">
+
+
+        <CheckBox
+            android:id="@+id/HINDI_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="556dp"
+            android:layout_weight="1"
+            android:text="HINDI"
+            android:textColor="#800000"/>
+
+        <CheckBox
+            android:id="@+id/ENGLISH_SONG"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="556dp"
+            android:layout_weight="1"
+            android:text="ENGLISH"
+            android:textColor="#800000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.235">
+
+        <CheckBox
+            android:id="@+id/MARATHI_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="1"
+            android:text="MARATHI"
+            android:textColor="#800000"/>
+
+        <CheckBox
+            android:id="@+id/GUJARATHI_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="GUJARATHI"
+            android:textColor="#800000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.131">
+
+        <CheckBox
+            android:id="@+id/PARTY_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginBottom="68dp"
+            android:layout_weight="1"
+            android:text="PARTY"
+            android:textColor="#800000"/>
+        <CheckBox
+            android:id="@+id/ROMACE_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="ROMANCE"
+            android:textColor="#800000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.131">
+
+
+        <CheckBox
+            android:id="@+id/HIPHOP_SONGS"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="HIPHOP"
+            android:textColor="#800000"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/WORKOUT"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:text="WORKOUT"
+            android:textColor="#800000">
+
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR LANGUAGE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:textColor="@color/teal_700"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR GENRE OF MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_language"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="SKIP"
+        app:layout_constraintBottom_toTopOf="@+id/select_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        android:textColor="#191970"/>
+
+    <TextView
+        android:id="@+id/NEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="NEXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:textColor="#191970"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
